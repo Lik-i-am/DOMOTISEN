@@ -1,12 +1,12 @@
 # DOMOTISEN
 # Centrale Domotique Connectée 
 
-#  Description :
+# I - Description :
 
 Ce projet consiste en la création d'une centrale domotique multifonctions avec interface tactile embarquée. L'objectif est d'offrir une gestion simple et intuitive de différents dispositifs de la maison, tout en assurant un contrôle optimal de l'énergie et de la sécurité.
 
 
-#  Objectifs :
+# II - Objectifs :
 
 •	Gestion des volets roulants via servomoteurs.
 •	Détection de présence et d’intrusion avec des capteurs PIR.
@@ -14,7 +14,7 @@ Ce projet consiste en la création d'une centrale domotique multifonctions avec 
 •	Optimisation de la consommation d’énergie avec des fonctionnalités comme la mise en veille automatique de l’écran.
 
 
-#  Matériel utilisé & connexions :
+# III - Matériel utilisé & connexions :
 
 *1. STM32F746G :*
 Carte principale utilisée pour la logique embarquée, l’affichage et la gestion des périphériques.
@@ -59,7 +59,7 @@ Câblage avec Dupont vers des sorties PWM du STM32 via Base Shield.
 •	Alimentation : 5V + GND
 
 
-# 	Réalisation du prototype
+# IV -	Réalisation du prototype
 1.	Fixer la carte STM32 sur une base pour stabiliser l’écran (impression 3D)
 2.	Connecter la Base Shield sur les headers (côtés GPIO)
 3.	Branchement des modules avec câbles Grove (pour capteurs compatibles) ou Dupont pour les autres connexions
@@ -67,7 +67,7 @@ Câblage avec Dupont vers des sorties PWM du STM32 via Base Shield.
 5.	Flasher le firmware après configuration via STM32CubeIDE
 
 
-# 	Logicielles utilisées
+# V -	Logicielles utilisées
 
 	TouchGFX, pour la création de l'interface graphique
 	STM32CubeIDE, pour le développement embarqué en C/C++
@@ -86,7 +86,7 @@ Câblage avec Dupont vers des sorties PWM du STM32 via Base Shield.
 Mode debug disponible pour observer le comportement du système
 
 
-# 	Fonctionnalités et Utilisations :
+# VI - Fonctionnalités et Utilisations :
 
 Le système propose une interface tactile intuitive, permettant à l'utilisateur d'interagir facilement avec les différentes fonctions domotiques :
 
@@ -97,11 +97,11 @@ Le système propose une interface tactile intuitive, permettant à l'utilisateur
 •	Mesures et actions automatiques : les capteurs effectuent des relevés sans besoin d'intervention, garantissant un suivi constant de l’environnement
 
 
-# 	Améliorations possibles :
+# VII -	Améliorations possibles :
 
-	Intégration WiFi/Bluetooth : Utilisation d'un module BLE pour ajouter la connectivité sans fil
-	Application mobile : Développer une application mobile pour contrôler le système à distance
-	Commandes vocales : Intégrer des commandes vocales
-	Automatisation des volets roulants : en fonction de la luminosité les volets s'ouvrent et se ferment
+==>	Intégration WiFi/Bluetooth : Utilisation d'un module BLE pour ajouter la connectivité sans fil
+==>	Application mobile : Développer une application mobile pour contrôler le système à distance
+==>		Commandes vocales : Intégrer des commandes vocales
+==>		Automatisation des volets roulants : en fonction de la luminosité les volets s'ouvrent et se ferment
 
 

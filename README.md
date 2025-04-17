@@ -111,28 +111,28 @@ Câblage avec Dupont vers des sorties PWM du STM32 via Base Shield.
 
 # V -	Logicielles utilisées
 
-→	TouchGFX, pour la création de l'interface graphique
+→	*TouchGFX*, pour la création de l'interface graphique
 
-→	STM32CubeIDE, pour le développement embarqué en C/C++
+→	*STM32CubeIDE*, pour le développement embarqué en C/C++
 
 
-*Configuration logicielle*
+# *Configuration logicielle*
 
-*1.	Créer l’interface TouchGFX :*
+# *1.	Créer l’interface TouchGFX :*
 
 •	Ajouter des widgets (jauges, boutons, textes)
 
 •	Lier les composants aux callbacks en C++ pour les actions utilisateur
 
 
-*2.	Configuration STM32CubeIDE :*
+# *2.	Configuration STM32CubeIDE :*
 
 •	Configurer les pins, les interruptions, le PWM et I2C
 
 •	Ajouter le code pour le traitement des capteurs, la logique des volets et la détection des mouvements
 
 
-*3.	Compilation et flash du code :*
+# *3.	Compilation et flash du code :*
 
 Mode debug disponible pour observer le comportement du système
 

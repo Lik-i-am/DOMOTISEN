@@ -19,17 +19,17 @@ Ce projet consiste en la création d'une centrale domotique multifonctions avec 
 
 # III - Matériel utilisé & connexions :
 
-*1. STM32F746G :*
+# *1. STM32F746G :*
 
 Carte principale utilisée pour la logique embarquée, l’affichage et la gestion des périphériques.
 
 
-*2. Base Shield (sur le STM32 via headers) :*
+# *2. Base Shield (sur le STM32 via headers) :*
 
 Permet de connecter facilement les capteurs Grove avec des câbles 4 broches.
 
 
-*3. IKS01A3 (Capteur environnemental) :*
+# *3. IKS01A3 (Capteur environnemental) :*
 
 •	Connexion : Grove I2C → Base Shield I2C (port I2C1 par défaut sur STM32)
 
@@ -44,7 +44,7 @@ Permet de connecter facilement les capteurs Grove avec des câbles 4 broches.
 - GND → GND
 
 
-*4. Capteurs PIR (x2) (Détection de mouvement) :*
+# *4. Capteurs PIR (x2) (Détection de mouvement) :*
 
 •	Utilisation de câbles Dupont pour les connecter à la Base Shield ou directement au STM32.
 
@@ -61,14 +61,14 @@ Permet de connecter facilement les capteurs Grove avec des câbles 4 broches.
 -	GND → GND
 
 
-*5. Buzzer (Alarme sonore) :*
+# *5. Buzzer (Alarme sonore) :*
 
 Connecté sur D5 (PI0)
 
 Signal : sortie digitale HIGH/LOW pour activer le son (PWM).
 
 
-*6. Servomoteurs (x2) (Contrôle des volets roulants) :*
+# *6. Servomoteurs (x2) (Contrôle des volets roulants) :*
 
 Câblage avec Dupont vers des sorties PWM du STM32 via Base Shield.
 
@@ -85,7 +85,7 @@ Câblage avec Dupont vers des sorties PWM du STM32 via Base Shield.
 -	GND → GND STM32
 
 
-*7. Capteur ultrason (Détection de proximité) :*
+# *7. Capteur ultrason (Détection de proximité) :*
 
 •	Câblé en Dupont directement sur le Base Shield ou STM32
 
@@ -141,25 +141,25 @@ Mode debug disponible pour observer le comportement du système
 
 Le système propose une interface tactile intuitive, permettant à l'utilisateur d'interagir facilement avec les différentes fonctions domotiques :
 
-•	Affichage en temps réel des données environnementales : température, humidité, détection de séisme, directement sur l’écran
+•	*Affichage en temps réel des données environnementales :* température, humidité, détection de séisme, directement sur l’écran
 
-•	Détection d’intrusion : grâce aux capteurs PIR, tout mouvement déclenche une alerte sonore via le buzzer
+•	*Détection d’intrusion :* grâce aux capteurs PIR, tout mouvement déclenche une alerte sonore via le buzzer
 
-•	Commande des volets roulants : contrôle manuel depuis l'écran tactile
+•	*Commande des volets roulants :* contrôle manuel depuis l'écran tactile
 
-•	Veille automatique de l'écran : activation après une période d’inactivité pour réduire la consommation énergétique
+•	*Veille automatique de l'écran :* activation après une période d’inactivité pour réduire la consommation énergétique
 
-•	Mesures et actions automatiques : les capteurs effectuent des relevés sans besoin d'intervention, garantissant un suivi constant de l’environnement
+•	*Mesures et actions automatiques :* les capteurs effectuent des relevés sans besoin d'intervention, garantissant un suivi constant de l’environnement
 
 
 # VII -	Améliorations possibles :
 
-→ Intégration WiFi/Bluetooth : Utilisation d'un module BLE pour ajouter la connectivité sans fil
+→ *Intégration WiFi/Bluetooth :* Utilisation d'un module BLE pour ajouter la connectivité sans fil
 
-→	Application mobile : Développer une application mobile pour contrôler le système à distance
+→	*Application mobile :* Développer une application mobile pour contrôler le système à distance
 
-→	Commandes vocales : Intégrer des commandes vocales
+→	*Commandes vocales :* Intégrer des commandes vocales
 
-→	Automatisation des volets roulants : en fonction de la luminosité les volets s'ouvrent et se ferment
+→	*Automatisation des volets roulants :* en fonction de la luminosité les volets s'ouvrent et se ferment
 
 

@@ -9,8 +9,11 @@ Ce projet consiste en la création d'une centrale domotique multifonctions avec 
 # II - Objectifs :
 
 •	Gestion des volets roulants via servomoteurs.
+
 •	Détection de présence et d’intrusion avec des capteurs PIR.
+
 •	Affichage des données environnementales (température, humidité, séisme).
+
 •	Optimisation de la consommation d’énergie avec des fonctionnalités comme la mise en veille automatique de l’écran.
 
 
